@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 h1,
 h2 {
   font-family: "Monoton", cursive;
@@ -21,6 +25,7 @@ p {
 
 main {
   padding: 70px 0;
+  overflow: hidden; /* Hide scrollbars */
 }
 
 header {
@@ -50,5 +55,6 @@ footer {
 
 .footer__link > img {
   height: 45px;
-  color: #08113b;
+  filter: invert(12%) sepia(17%) saturate(3580%) hue-rotate(201deg)
+    brightness(87%) contrast(111%);
 }
