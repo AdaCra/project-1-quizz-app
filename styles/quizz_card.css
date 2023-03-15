@@ -1,12 +1,13 @@
 .card_section {
   margin: 30px auto;
+  width: 75%;
   border: 2px outset #525252;
+  border-radius: 15px;
   background-color: #6b78b4;
   padding: 10px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 75%;
 }
 
 .bookmark_button {

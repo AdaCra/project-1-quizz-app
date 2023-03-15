@@ -1,0 +1,33 @@
+main {
+  margin: 100px auto;
+  width: 80%;
+  border: 2px outset #525252;
+  border-radius: 15px;
+  background-color: #6b78b4;
+  padding: 0;
+}
+
+#profile_title {
+  text-align: center;
+}
+#profile_photo {
+  margin: 30px;
+}
+.user_details {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.user_bio {
+  display: flex;
+  justify-content: space-around;
+}
+
+#profile_table {
+  width: auto;
+}
+
+th > h3 {
+  text-align: left;
+}

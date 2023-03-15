@@ -17,10 +17,21 @@ h2 {
   color: #08113b;
   text-shadow: 3px 3px 12px #fff;
 }
+h3 {
+  font-family: "Roboto", sans-serif;
+}
 
 p {
   font-family: "Shadows Into Light", cursive;
   font-size: 1.5em;
+}
+
+td {
+  font-family: "Roboto", sans-serif;
+}
+p.profile {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
 }
 
 main {
