@@ -1,0 +1,55 @@
+.card_section {
+  margin: 30px auto;
+  border: 2px outset #525252;
+  background-color: #3f4e94;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 75%;
+}
+
+.bookmark_button {
+  position: relative;
+}
+
+.bookmark_tag {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 0px;
+  top: -20px;
+}
+
+.bookmark_tag:hover {
+  cursor: pointer;
+}
+
+.card_heading {
+  text-align: left;
+  line-height: 24px;
+}
+
+.card_question {
+  margin-top: 15px;
+}
+
+.answer_button {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.hash_tag_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.topic_tag {
+  margin-top: 10px;
+  padding: 2px 4px;
+  font-size: 1em;
+  list-style-type: none;
+  background-color: #ececa5;
+  border-radius: 10px;
+}

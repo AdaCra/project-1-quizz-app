@@ -1,4 +1,5 @@
 @import "./quizz_card.css";
+@import "./profile.css";
 
 * {
   box-sizing: border-box;
@@ -10,10 +11,22 @@ h1,
 h2 {
   font-family: "Monoton", cursive;
   color: #08113b;
+  text-shadow: 3px 3px 12px #fff;
+}
+
+p {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 1.5em;
+}
+
+main {
+  padding: 70px 0;
 }
 
 header {
+  z-index: 1;
   position: fixed;
+  height: 75px;
   top: 0;
   width: 100%;
   background-color: #ececa5;
@@ -23,6 +36,7 @@ header {
 }
 
 footer {
+  z-index: 1;
   position: fixed;
   bottom: 0;
   width: 100%;
