@@ -50,3 +50,8 @@ th > h3 {
 .contribution_icon {
   width: 50px;
 }
+
+.profile_settings {
+  display: flex;
+  justify-content: space-around;
+}
