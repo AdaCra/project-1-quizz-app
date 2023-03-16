@@ -1,5 +1,6 @@
 @import "./quizz_card.css";
 @import "./profile.css";
+@import "./variables.css";
 
 * {
   box-sizing: border-box;
@@ -11,13 +12,23 @@
   display: none;
 }
 
-h1,
+h1 {
+  font-family: "Monoton", cursive;
+  color: var(--primary_color);
+  text-shadow: 10px 10px 50px var(--light_shadow);
+}
+
 h2 {
   font-family: "Monoton", cursive;
-  color: #08113b;
-  text-shadow: 3px 3px 12px #fff;
+  color: var(--primary_color);
+  text-shadow: 10px 10px 50px var(--light_shadow);
 }
+
 h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+h4 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -36,6 +47,7 @@ p.profile {
 
 main {
   padding: 70px 0;
+  background-color: var(--background_color);
   overflow: hidden; /* Hide scrollbars */
 }
 
@@ -45,8 +57,8 @@ header {
   height: 75px;
   top: 0;
   width: 100%;
-  background-color: #ececa5;
-  box-shadow: 10px 0px 20px #08113b;
+  background-color: var(--header_color);
+  box-shadow: 10px 0px 20px var(--header_color);
   text-align: center;
   padding: 10px;
 }
@@ -60,12 +72,11 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #ececa5;
-  box-shadow: -10px 0px 20px #08113b;
+  background-color: var(--header_color);
+  box-shadow: -10px 0px 20px var(--header_color);
 }
 
 .footer__link > img {
   height: 45px;
-  filter: invert(12%) sepia(17%) saturate(3580%) hue-rotate(201deg)
-    brightness(87%) contrast(111%);
+  filter: var(--primary_icon);
 }

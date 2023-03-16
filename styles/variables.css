@@ -1,0 +1,10 @@
+:root {
+  --primary_color: #4e6e81;
+  --primary_icon: invert(37%) sepia(51%) saturate(286%) hue-rotate(158deg)
+    brightness(97%) contrast(88%);
+  --cardtext_color: #f9dbbb;
+  --card_color: #979797;
+  --background_color: #2e3840;
+  --light_shadow: #faeee2;
+  --header_color: #131d25;
+}

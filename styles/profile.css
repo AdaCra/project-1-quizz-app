@@ -1,22 +1,19 @@
-main {
-  margin: 100px auto;
+.profile_box {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  padding: 15px;
   width: 80%;
-  border: 2px outset #525252;
+  border: 2px outset var(--cardtext_color);
   border-radius: 15px;
-  background-color: #6b78b4;
-  padding: 0;
+  background-color: var(--card_color);
 }
 
-#profile_title {
+.profile_title {
   text-align: center;
 }
 #profile_photo {
   margin: 30px;
-}
-.user_details {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
 }
 
 .user_bio {
@@ -30,4 +27,26 @@ main {
 
 th > h3 {
   text-align: left;
+}
+
+#profile_about_me {
+  margin: 15px;
+}
+
+.contribution_box {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contribution_box > a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+}
+
+.contribution_icon {
+  width: 50px;
 }

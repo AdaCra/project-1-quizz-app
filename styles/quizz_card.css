@@ -1,9 +1,9 @@
 .card_section {
   margin: 30px auto;
   width: 75%;
-  border: 2px outset #525252;
+  border: 2px outset var(--cardtext_color);
   border-radius: 15px;
-  background-color: #6b78b4;
+  background-color: var(--card_color);
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -51,6 +51,6 @@
   padding: 2px 4px;
   font-size: 1em;
   list-style-type: none;
-  background-color: #ececa5;
+  background-color: var(--cardtext_color);
   border-radius: 10px;
 }
