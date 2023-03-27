@@ -20,7 +20,7 @@
   </head>
   <body>
     <header class="header">
-      <h1 class="main_title">Quizz App</h1>
+      <h1 class="main_title">Quizz App : Add a Question</h1>
     </header>
 
     <main></main>
@@ -34,9 +34,6 @@
           src="../assets/bookmark_filled.png"
           alt="current page bookmarked questions"
           class="icon"
-      /></a>
-      <a href="./form.html" class="footer__link footer__link--inactive"
-        ><img src="../assets/edit.png" alt="link to profile page" class="icon"
       /></a>
       <a href="./profile.html" class="footer__link footer__link--inactive"
         ><img

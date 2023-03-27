@@ -13,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@500&family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
+    <!-- Javascript -->
+    <script src="./script/script.js" defer></script>
 
     <title>Quizz App</title>
   </head>
@@ -25,17 +27,12 @@
       <section class="card_section">
         <div class="bookmark_button">
           <img
-            src="./assets/bookmark_filled.png"
+            src="./assets/bookmark.png"
             alt="unbookmarked"
             class="icon bookmark_tag"
-            id="bookmark_on"
+            data-js="bookmark-button"
+            onclick="toggleBookmark(this)"
           />
-          <!-- <img
-            src="./assets/bookmark.png"
-            alt="bookmark_selector"
-            class="icon bookmark_tag"
-            id="bookmark_off"
-          /> -->
         </div>
         <div class="card_content_box">
           <h2 class="card_heading">Question</h2>
@@ -43,12 +40,10 @@
             I have cities, but no houses. I have mountains, but no trees. I have
             water, but no fish. What am I?
           </p>
-          <button class="answer_button">
-            <p class="hidden_answer">Reveal Answer</p>
-            <p class="revealed_answer">
-              <!-- A map -->
-            </p>
-          </button>
+          <p class="card_answer_button" data-js="card_answer_button">
+            <span class="card_answer_revealText">Reveal Answer</span>
+            <span class="card_answer_answerText hidden"><b>A Map</b></span>
+          </p>
           <ul class="hash_tag_box">
             <li class="topic_tag">#traditional</li>
             <li class="topic_tag">#nonsense</li>
@@ -60,66 +55,23 @@
       <section class="card_section">
         <div class="bookmark_button">
           <img
-            src="./assets/bookmark_filled.png"
+            src="./assets/bookmark.png"
             alt="unbookmarked"
             class="icon bookmark_tag"
-            id="bookmark_on"
-          />
-          <img
-            src="./assets/bookmark.png"
-            alt="bookmark_selector"
-            class="icon bookmark_tag"
-            id="bookmark_off"
+            data-js="bookmark-button"
+            onclick="toggleBookmark(this)"
           />
         </div>
         <div class="card_content_box">
           <h2 class="card_heading">Question</h2>
           <p class="card_question">
-            How much wood would a woodchuck chuck if a woodchuck could chuck
-            wood?
+            I have cities, but no houses. I have mountains, but no trees. I have
+            water, but no fish. What am I?
           </p>
-          <button class="answer_button">
-            <p class="hidden_answer">Reveal Answer</p>
-            <p class="revealed_answer">
-              <!-- So much wood would a woodchuck chuck as a woodchuck would if a
-              woodchuck could chuck wood! -->
-            </p>
-          </button>
-          <ul class="hash_tag_box">
-            <li class="topic_tag">#traditional</li>
-            <li class="topic_tag">#nonsense</li>
-            <li class="topic_tag">#humour</li>
-            <li class="topic_tag">#animal</li>
-          </ul>
-        </div>
-      </section>
-      <section class="card_section">
-        <div class="bookmark_button">
-          <img
-            src="./assets/bookmark.png"
-            alt="bookmark_selector"
-            class="icon bookmark_tag"
-            id="bookmark_off"
-          />
-          <img
-            src="./assets/bookmark_filled.png"
-            alt="unbookmarked"
-            class="icon bookmark_tag"
-            id="bookmark_on"
-          />
-        </div>
-        <div class="card_content_box">
-          <h2 class="card_heading">Question</h2>
-          <p class="card_question">
-            I come from a mine and get surrounded by wood. I do right by anyone
-            who uses me. What am I?
+          <p class="card_answer_button" data-js="card_answer_button">
+            <span class="card_answer_revealText">Reveal Answer</span>
+            <span class="card_answer_answerText hidden"><b>A Map</b></span>
           </p>
-          <button class="answer_button">
-            <p class="hidden_answer">Reveal Answer</p>
-            <p class="revealed_answer">
-              <!-- A Pencil Lead -->
-            </p>
-          </button>
           <ul class="hash_tag_box">
             <li class="topic_tag">#traditional</li>
             <li class="topic_tag">#nonsense</li>
@@ -131,99 +83,23 @@
       <section class="card_section">
         <div class="bookmark_button">
           <img
-            src="./assets/bookmark_filled.png"
+            src="./assets/bookmark.png"
             alt="unbookmarked"
             class="icon bookmark_tag"
-            id="bookmark_on"
-          />
-          <img
-            src="./assets/bookmark.png"
-            alt="bookmark_selector"
-            class="icon bookmark_tag"
-            id="bookmark_off"
+            data-js="bookmark-button"
+            onclick="toggleBookmark(this)"
           />
         </div>
         <div class="card_content_box">
           <h2 class="card_heading">Question</h2>
           <p class="card_question">
-            I have keys, but no locks, no rooms and no door, but you can enter,
-            and escape whenever you wish . What am I?
+            I have cities, but no houses. I have mountains, but no trees. I have
+            water, but no fish. What am I?
           </p>
-          <button class="answer_button">
-            <p class="hidden_answer">Reveal Answer</p>
-            <p class="revealed_answer">
-              <!-- A keyboard -->
-            </p>
-          </button>
-          <ul class="hash_tag_box">
-            <li class="topic_tag">#traditional</li>
-            <li class="topic_tag">#nonsense</li>
-            <li class="topic_tag">#humour</li>
-            <li class="topic_tag">#object</li>
-          </ul>
-        </div>
-      </section>
-      <section class="card_section">
-        <div class="bookmark_button">
-          <img
-            src="./assets/bookmark_filled.png"
-            alt="unbookmarked"
-            class="icon bookmark_tag"
-            id="bookmark_on"
-          />
-          <img
-            src="./assets/bookmark.png"
-            alt="bookmark_selector"
-            class="icon bookmark_tag"
-            id="bookmark_off"
-          />
-        </div>
-        <div class="card_content_box">
-          <h2 class="card_heading">Question</h2>
-          <p class="card_question">
-            How can a pocket be empty and still have something in it?
+          <p class="card_answer_button" data-js="card_answer_button">
+            <span class="card_answer_revealText">Reveal Answer</span>
+            <span class="card_answer_answerText hidden"><b>A Map</b></span>
           </p>
-          <button class="answer_button">
-            <p class="hidden_answer">Reveal Answer</p>
-            <p class="revealed_answer">
-              <!-- It can have a hole -->
-            </p>
-          </button>
-          <ul class="hash_tag_box">
-            <li class="topic_tag">#traditional</li>
-            <li class="topic_tag">#nonsense</li>
-            <li class="topic_tag">#humour</li>
-            <li class="topic_tag">#object</li>
-          </ul>
-        </div>
-      </section>
-      <section class="card_section">
-        <div class="bookmark_button">
-          <img
-            src="./assets/bookmark_filled.png"
-            alt="unbookmarked"
-            class="icon bookmark_tag"
-            id="bookmark_on"
-          />
-          <!-- <img
-            src="./assets/bookmark.png"
-            alt="bookmark_selector"
-            class="icon bookmark_tag"
-            id="bookmark_off"
-          /> -->
-        </div>
-        <div class="card_content_box">
-          <h2 class="card_heading">Question</h2>
-          <p class="card_question">
-            Rich people need me, poor people have me and if you eat me you'll
-            die?
-          </p>
-          <button class="answer_button">
-            <p class="hidden_answer">Reveal Answer</p>
-            <p class="revealed_answer">
-              <!-- Nothing -->
-            </p>
-          </button>
           <ul class="hash_tag_box">
             <li class="topic_tag">#traditional</li>
             <li class="topic_tag">#nonsense</li>
@@ -248,6 +124,9 @@
           src="./assets/bookmark_transparent.png"
           alt="link to bookmarked questions"
           class="icon"
+      /></a>
+      <a href="./pages/form.html" class="footer__link footer__link--inactive"
+        ><img src="../assets/edit.png" alt="link to profile page" class="icon"
       /></a>
       <a href="./pages/profile.html" class="footer__link footer__link--inactive"
         ><img
