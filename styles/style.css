@@ -12,16 +12,14 @@
 ::-webkit-scrollbar {
   display: none;
 }
-main {
-  height: 100vh;
-}
-h1,
-h2 {
+
+h1 {
   font-family: "Monoton", cursive;
   color: var(--primary_color);
   text-shadow: 10px 10px 50px var(--light_shadow);
 }
 
+h2,
 h3,
 h4,
 td {
@@ -40,6 +38,7 @@ p.profile {
 
 main {
   padding: 70px 0;
+  min-height: 100vh;
   background-color: var(--background_color);
   overflow: hidden; /* Hide scrollbars */
 }
