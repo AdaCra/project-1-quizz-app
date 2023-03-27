@@ -8,15 +8,16 @@
 }
 
 .question_form_input {
+  padding: 5px;
   font-family: "Shadows Into Light", cursive;
   font-size: 1.5em;
   height: 150px;
   width: 80%;
-  
-  overflow-wrap: normal;
+  resize: none;
 }
 
 #question_form_category_hashtags {
+  padding: 5px;
   font-family: "Shadows Into Light", cursive;
   font-size: 1.5em;
   width: 80%;
@@ -27,6 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 #question_form_submit_button {
