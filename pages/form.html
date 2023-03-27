@@ -15,6 +15,7 @@
     />
     <!-- Javascript -->
     <script src="../script/script.js" defer></script>
+    <script src="../script/addQuestion.js" defer></script>
 
     <title>Quizz App</title>
   </head>
@@ -37,7 +38,11 @@
             name="question_form_userquestion"
             id="question_form_userquestion"
             rows="3"
-            placeholder="Type your question here..."></textarea>
+            minlength="15"
+            maxlength="120"
+            placeholder="Type your question here..."
+            required
+          ></textarea>
           <label class="form_input_label" for="question_form_useranswer"
             >Your Answer</label
           >
@@ -46,7 +51,11 @@
             name="question_form_useranswer"
             id="question_form_useranswer"
             rows="3"
-            placeholder="Type your answer here..."></textarea>
+            minlength="15"
+            maxlength="120"
+            placeholder="Type your answer here..."
+            required
+          ></textarea>
 
           <label class="form_input_label" for="question_form_category_hashtags"
             >Question Hashtags</label
@@ -55,24 +64,27 @@
             type="selection"
             name="question_form_category_hashtags"
             id="question_form_category_hashtags"
+            required
           >
-            <option value="#arts&culture">Arts & Culture</option>
+            <option value="arts&culture"># Arts & Culture</option>
 
-            <option value="#film&music">Film & Music</option>
+            <option value="film&music"># Film & Music</option>
 
-            <option value="#geography">Geography</option>
+            <option value="geography"># Geography</option>
 
-            <option value="#history">History</option>
+            <option value="history"># History</option>
 
-            <option value="#humour">Humourous, Riddles & Jokes</option>
+            <option value="humour"># Humourous, Riddles & Jokes</option>
 
-            <option value="#language">Language</option>
+            <option value="science&nature"># Science & Nature</option>
 
-            <option value="#science&nature">Science & Nature</option>
+            <option value="sport"># Sport</option>
 
-            <option value="#sport">Sport</option>
+            <option value="technology"># Tech</option>
           </select>
-          <button type="submit" id="question_form_submit_button">Add Your Question</button>
+          <button type="submit" id="question_form_submit_button">
+            Add Your Question
+          </button>
         </form>
       </section>
     </main>

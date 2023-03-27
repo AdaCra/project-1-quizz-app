@@ -27,3 +27,6 @@ revealAnswerButton.forEach((Button) => {
   });
   //
 });
+
+
+const addQuizzQuestion = 1
