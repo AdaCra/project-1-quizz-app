@@ -1,4 +1,5 @@
 import { cardInputCreation } from "./addQuestion.js";
+import { createCharacterRemain } from "./characterLength";
 
 // Bookmarks
 function toggleBookmark(obj) {
@@ -27,7 +28,6 @@ revealAnswerButton.forEach((Button) => {
     event.target.firstElementChild.classList.toggle("hidden");
     event.target.lastElementChild.classList.toggle("hidden");
   });
-  //
 });
 
 // Add a new User question
@@ -40,11 +40,23 @@ addQuizzQuestion.addEventListener("submit", (e) => {
   const userQuestion = dataObject.question_form_userquestion;
   const userAnswer = dataObject.question_form_useranswer;
   const usertags = dataObject.question_form_category_hashtags;
-  window.location.assign("../index.html");
 
-  const bodyMain = document.querySelector('[data-js="card_display"]');
+  const bodyMain = document.querySelector("main");
 
   // function arguments(targetElement,cardQuestion,cardAnswer,taglist)
 
   cardInputCreation(bodyMain, userQuestion, userAnswer, usertags);
+});
+
+const targetElement = document.querySelectorAll(
+  '[data-js="question_form_input"]'
+);
+targetElement.forEach((element) => {
+  element.addEventListener("input", (event) => {
+    let currentStringLength = parseInt(element.value.length);
+    const maxCharacterLength = parseInt(element.getAttribute("maxlength"));
+    console.log(currentStringLength, maxCharacterLength);
+    const charactersRemaining = currentStringLength - maxCharacterLength;
+    createCharacterRemain(charactersRemaining, targetElement);
+  });
 });

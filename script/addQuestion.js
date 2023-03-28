@@ -79,5 +79,5 @@ export function cardInputCreation(
   // Add Content to Card Section
   card_section.appendChild(card_content_box);
   // Add Card to Site
-//   targetElement.appendChild(card_section);
+  targetElement.appendChild(card_section);
 }

@@ -16,6 +16,7 @@
     <!-- Javascript -->
     <script type="module" src="../script/script.js" defer></script>
     <script type="module" src="../script/addQuestion.js" defer></script>
+    <script type="module" src="../script/characterLength.js" defer></script>
 
     <title>Quizz App</title>
   </head>
@@ -38,25 +39,30 @@
             >Your Question</label
           >
           <textarea
+            data-js="question_form_input"
             class="question_form_input"
             name="question_form_userquestion"
             id="question_form_userquestion"
             rows="3"
             minlength="15"
-            maxlength="120"
+            maxlength="150"
             placeholder="Type your question here..."
             required
           ></textarea>
+          <p 
+          class="question_form_input_remainingCharacters"
+          data-js="question_form_input_remainingCharacters"></p>
           <label class="form_input_label" for="question_form_useranswer"
             >Your Answer</label
           >
           <textarea
+            data-js="question_form_input"
             class="question_form_input"
             name="question_form_useranswer"
             id="question_form_useranswer"
             rows="3"
             minlength="1"
-            maxlength="120"
+            maxlength="150"
             placeholder="Type your answer here..."
             required
           ></textarea>
