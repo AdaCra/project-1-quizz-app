@@ -1,7 +1,11 @@
 // Targeting <body>.<main>
 
-// const cardInputCreation = (cardQuestion, cardAnswer, taglist) => {
-  const mainElement = document.querySelector('[data-js="card_display"]');
+export function cardInputCreation(
+  targetElement,
+  cardQuestion,
+  cardAnswer,
+  taglist
+) {
   // Begin the Creation
   // Section
   const card_section = document.createElement("section");
@@ -35,7 +39,7 @@
   // Question
   const card_question = document.createElement("p");
   card_question.classList.add("card_question");
-  card_question.textContent = "${cardQuestion}";
+  card_question.textContent = `${cardQuestion}`;
 
   card_content_box.appendChild(card_question);
 
@@ -54,7 +58,7 @@
   card_answer_answerText.classList.add("card_answer_answerText");
   card_answer_answerText.classList.add("hidden");
   const card_answer_answerText_bold = document.createElement("b");
-  card_answer_answerText_bold.textContent = "${cardAnswer}";
+  card_answer_answerText_bold.textContent = `${cardAnswer}`;
   card_answer_answerText.appendChild(card_answer_answerText_bold);
   card_answer_button.appendChild(card_answer_answerText);
 
@@ -67,7 +71,7 @@
   // taglist.forEach(hashtag => {
   const topic_tag = document.createElement("li");
   topic_tag.classList.add("topic_tag");
-  topic_tag.textContent = "${taglist}";
+  topic_tag.textContent = `#${taglist}`;
   hash_tag_box.appendChild(topic_tag);
   // });
   card_content_box.appendChild(hash_tag_box);
@@ -75,5 +79,5 @@
   // Add Content to Card Section
   card_section.appendChild(card_content_box);
   // Add Card to Site
-  mainElement.appendChild(card_section);
-// };
+//   targetElement.appendChild(card_section);
+}

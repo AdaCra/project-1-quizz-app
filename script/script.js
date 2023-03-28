@@ -1,3 +1,5 @@
+import { cardInputCreation } from "./addQuestion.js";
+
 // Bookmarks
 function toggleBookmark(obj) {
   const bookmarkClear = "./assets/bookmark.png";
@@ -28,5 +30,21 @@ revealAnswerButton.forEach((Button) => {
   //
 });
 
+// Add a new User question
+const addQuizzQuestion = document.querySelector('[data-js="addQuizzQuestion"]');
+addQuizzQuestion.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  const dataObject = Object.fromEntries(formData);
+  console.log(dataObject);
+  const userQuestion = dataObject.question_form_userquestion;
+  const userAnswer = dataObject.question_form_useranswer;
+  const usertags = dataObject.question_form_category_hashtags;
+  window.location.assign("../index.html");
 
-const addQuizzQuestion = 1
+  const bodyMain = document.querySelector('[data-js="card_display"]');
+
+  // function arguments(targetElement,cardQuestion,cardAnswer,taglist)
+
+  cardInputCreation(bodyMain, userQuestion, userAnswer, usertags);
+});

@@ -14,8 +14,8 @@
       rel="stylesheet"
     />
     <!-- Javascript -->
-    <script src="../script/script.js" defer></script>
-    <script src="../script/addQuestion.js" defer></script>
+    <script type="module" src="../script/script.js" defer></script>
+    <script type="module" src="../script/addQuestion.js" defer></script>
 
     <title>Quizz App</title>
   </head>
@@ -26,7 +26,11 @@
 
     <main>
       <section class="profile_box">
-        <form action="submit" id="question_form_form">
+        <form
+          action="submit"
+          id="question_form_form"
+          data-js="addQuizzQuestion"
+        >
           <legend class="question_form_title">
             <h2>Create Your Own Question</h2>
           </legend>
@@ -51,7 +55,7 @@
             name="question_form_useranswer"
             id="question_form_useranswer"
             rows="3"
-            minlength="15"
+            minlength="1"
             maxlength="120"
             placeholder="Type your answer here..."
             required
