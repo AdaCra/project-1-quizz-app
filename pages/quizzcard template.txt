@@ -10,25 +10,16 @@ CARD TEMPLATE BELOW
           />
         </div>
         <div class="card_content_box">
-        
           <h2 class="card_heading">Question</h2>
-
           <p class="card_question">
             cardQuestion
           </p>
           <p class="card_answer_button" data-js="card_answer_button">
-
-            <span class="card_answer_revealText">Reveal Answer
-            </span>
-
+            <span class="card_answer_revealText">Reveal Answer</span>
             <span class="card_answer_answerText hidden">
-            <b>
-            cardAnswer
-            </b>
+            <b>cardAnswer</b>
             </span>
-
           </p>
-
           <ul class="hash_tag_box">
             <li class="topic_tag">#riddle</li>
           </ul>
