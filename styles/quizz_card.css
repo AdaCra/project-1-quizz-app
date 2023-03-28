@@ -22,10 +22,6 @@
   top: -20px;
 }
 
-.bookmark_tag:hover {
-  cursor: pointer;
-}
-
 .card_heading {
   text-align: left;
   line-height: 24px;
@@ -35,13 +31,15 @@
   margin-top: 15px;
 }
 
-.answer_button {
+.card_answer_button {
   margin-top: 15px;
   width: 100%;
+  background-color: var(--cardtext_color);
 }
 
 .hash_tag_box {
   display: flex;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -53,4 +51,10 @@
   list-style-type: none;
   background-color: var(--cardtext_color);
   border-radius: 10px;
+  right: 0;
+}
+
+.bookmark_tag:hover,
+.card_answer_button {
+  cursor: pointer;
 }

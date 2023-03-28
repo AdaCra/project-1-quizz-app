@@ -1,0 +1,45 @@
+[
+    {
+        "id": 0,
+        "question": "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
+        "answer": "A Map",
+        "tags": ["#objects", "#traditional", "#clever"]
+    },
+    {
+        "id": 1,
+        "question": "How much wood would a woodchuck chuck if a woodchuck could chuck wood?",
+        "answer": "So much wood would a woodchuck chuck as a woodchuck would if a woodchuck could chuck wood!",
+        "tags": ["#humorous", "#silly", "#nonsense"]
+    },
+    {
+        "id": 2,
+        "question": "I come from a mine and get surrounded by wood. I do right by anyone who uses me. What am I?",
+        "answer": "A Pencil Lead",
+        "tags": ["#objects", "#traditional", "#clever"],
+        "bookmarked": false
+    },
+    {
+        "id": 3,
+        "question": "I have keys, but no locks, no rooms and no door, but you can enter, and escape whenever you wish . What am I?",
+        "answer": "A keyboard",
+        "tags": ["#objects", "#traditional", "#clever"],
+        "bookmarked": false
+    },
+    {
+        "id": 4,
+        "question": "How can a pocket be empty and still have something in it?",
+        "answer": "A Hole",
+        "tags": ["#objects", "#traditional", "#clever"],
+        "bookmarked": false
+    },
+    {
+        "id": 5,
+        "question": "Rich people need me, poor people have me and if you eat me you'll die?",
+        "answer": "Nothing",
+        "tags": ["#objects", "#traditional", "#clever"],
+        "bookmarked": false
+    }
+
+
+        
+]

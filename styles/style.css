@@ -1,6 +1,7 @@
 @import "./quizz_card.css";
 @import "./profile.css";
 @import "./variables.css";
+@import "./form.css";
 
 * {
   box-sizing: border-box;
@@ -18,17 +19,10 @@ h1 {
   text-shadow: 10px 10px 50px var(--light_shadow);
 }
 
-h2 {
-  font-family: "Monoton", cursive;
-  color: var(--primary_color);
-  text-shadow: 10px 10px 50px var(--light_shadow);
-}
-
-h3 {
-  font-family: "Roboto", sans-serif;
-}
-
-h4 {
+h2,
+h3,
+h4,
+td {
   font-family: "Roboto", sans-serif;
 }
 
@@ -37,9 +31,6 @@ p {
   font-size: 1.5em;
 }
 
-td {
-  font-family: "Roboto", sans-serif;
-}
 p.profile {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
@@ -47,6 +38,7 @@ p.profile {
 
 main {
   padding: 70px 0;
+  min-height: 100vh;
   background-color: var(--background_color);
   overflow: hidden; /* Hide scrollbars */
 }
@@ -74,6 +66,10 @@ footer {
   align-items: center;
   background-color: var(--header_color);
   box-shadow: -10px 0px 20px var(--header_color);
+}
+
+.hidden {
+  display: none;
 }
 
 .footer__link > img {
